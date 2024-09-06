@@ -48,6 +48,7 @@ function determinarSector(angulo) {
     let sectorSeleccionado;
     const ajusteAngulo = (angulo + 180) % 360; // Ajusta el ángulo para que la flecha apunte correctamente desde abajo
 
+    //Agrego mas elementos para observar el resultado
     // Determina el sector según el ángulo ajustado
     if (ajusteAngulo >= 0 && ajusteAngulo < 60) {
         sectorSeleccionado = 1;
@@ -63,6 +64,7 @@ function determinarSector(angulo) {
         sectorSeleccionado = 6;
     }
 
+    //tal vez más adelante agregue otro elemento y vea el cambio
     // Muestra el resultado
     const resultado = document.getElementById('resultado');
     resultado.textContent = `Resultado: Sector ${sectorSeleccionado}`;
